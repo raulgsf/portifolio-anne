@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/portifolio-python/app" }
+  "version": 2,
+  "builds": [
+    { "src": "portifolio-python/app.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "portifolio-python/app.py" }
   ]
 }
