@@ -1,9 +1,15 @@
 {
   "version": 2,
   "builds": [
-    { "src": "portifolio-python/app.py", "use": "@vercel/python" }
+    {
+      "src": "portifolio-python/app.py",
+      "use": "@vercel/python"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "portifolio-python/app.py" }
+    {
+      "src": "/(.*)",
+      "dest": "portifolio-python/app.py"
+    }
   ]
 }
